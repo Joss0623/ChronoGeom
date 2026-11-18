@@ -2,7 +2,7 @@
 
 **ChronoGeom: Distilling Task-Conditioned Temporal Priors into Minimal Forecasters**
 
-Research in progress
+KDD 2027 · Under review
 
 [Project page](https://joss0623.github.io/projects/chronogeom/) · [Research homepage](https://joss0623.github.io/)
 
@@ -11,6 +11,14 @@ Research in progress
 ## Overview
 
 Study the transfer of task-conditioned temporal priors from language models into compact forecasting receivers, separating temporal assignment from receiver learning.
+
+## Model overview
+
+![ChronoGeom model overview](assets/model.png)
+
+The numerical base and common reader are frozen; only 48 temporal input coefficients are adapted. The LLM supplies cached priors offline and is not called at forecasting inference.
+
+[Original manuscript diagram](assets/model-original.png)
 
 ## Research focus
 
